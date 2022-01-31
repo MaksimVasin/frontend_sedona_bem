@@ -1,0 +1,21 @@
+.hotels__item {
+  display: flex;
+  border-bottom: 1px solid $grey;
+  padding: 30px 6%;
+}
+
+.hotels__item:first-child {
+  border-top: 1px solid $grey;
+}
+
+.hotels__buttons {
+  display: flex;
+}
+
+.hotels__rating {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  text-align: right;
+}

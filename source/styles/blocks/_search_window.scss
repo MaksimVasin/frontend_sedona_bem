@@ -1,0 +1,105 @@
+.search-form__wrap {
+  position: relative;
+}
+
+.search-from__window {
+  position: absolute;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 55px;
+  width: calc(100% - 40px);
+  min-height: 55 * 2;
+  box-shadow: 0 20px 10px 10px rgba($color: #020202, $alpha: 0.1);
+  box-sizing: border-box;
+  font-weight: 700;
+  background-color: #fff;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.2s linear;
+
+  @media (max-width: $mobile-width) {
+    padding: 20px;
+  }
+}
+
+.search-from__window--active {
+  transform: scaleY(1);
+}
+
+.button--close {
+  content: "Закрыть";
+}
+
+.search-form__user-form input {
+  margin-bottom: 25px;
+  border: none;
+  padding: 10px;
+  background-color: $background-body;
+}
+
+.search-form__user-form input[type="date"],
+.search-form__user-form input[type="number"] {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.search-form__user-form label {
+  margin-top: 6px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 5px;
+  }
+}
+
+.search-form__date {
+  width: 70%;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
+}
+
+.seatch-form__item {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    flex-wrap: wrap;
+  }
+}
+
+.user-form__wrap {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.user-form__item {
+  display: flex;
+  justify-content: right;
+  width: 45%;
+
+  input {
+    width: 33.5%;
+
+    @media (max-width: $mobile-width) {
+      width: 100%;
+    }
+  }
+
+  :first-child {
+    margin-right: 10%;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    justify-content: left;
+    margin-right: 0;
+    text-align: left;
+  }
+}

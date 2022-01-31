@@ -1,0 +1,113 @@
+.main-menu__list {
+  @media (min-width: 0) {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+
+  @media (min-width: $mobile-width) {
+    display: flex;
+    justify-content: space-between;
+    min-height: 56px;
+  }
+}
+
+// open mobile menu
+.main-menu--open .main-menu__list {
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
+}
+
+.main-menu__item {
+  @media (min-width: 0) {
+    padding: 5px;
+    font-family: "PT Sans";
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    width: 100%;
+  }
+
+  @media (min-width: $mobile-width) {
+    width: 20%;
+    min-height: 100%;
+    text-align: center;
+  }
+}
+
+.main-menu__item:nth-child(2) {
+  margin-right: auto;
+}
+
+.main-menu__item:first-child {
+  @media (max-width: $mobile-width) {
+    border-top: none;
+  }
+
+  @media (min-width: $mobile-width) {
+    padding-left: 6%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+}
+
+.main-menu__item:last-child {
+  @media (max-width: $mobile-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $mobile-width) {
+    padding-right: 6%;
+    box-sizing: border-box;
+    text-align: right;
+  }
+}
+
+.main-menu__item a {
+  @media (max-width: $mobile-width) {
+    display: block;
+    align-items: center;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+    padding: 14px;
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    background-color: $blue;
+    transition: color 1.2s linear;
+  }
+
+  @media (min-width: $mobile-width) {
+    display: block;
+    margin-top: 10px;
+    color: #000;
+  }
+}
+
+.main-menu__item a:hover {
+  @media (max-width: $mobile-width) {
+    background-color: $blue_hover;
+  }
+
+  @media (min-width: $mobile-width) {
+    color: $blue_hover;
+  }
+}
+
+.main-menu__item--active a,
+.main-menu__item--active a:hover {
+  @media (min-width: $mobile-width) {
+    color: $grey_no_active;
+    cursor: default;
+  }
+}

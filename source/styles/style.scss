@@ -1,0 +1,24 @@
+/* stylelint-disable scss/at-import-no-partial-leading-underscore */
+
+// global
+@import "global/_font.scss";
+@import "global/_global.scss";
+@import "global/_variables.scss";
+
+// blocks
+@import "blocks/_page.scss";
+@import "blocks/_header.scss";
+@import "blocks/_mainnav.scss";
+@import "blocks/_intro.scss";
+@import "blocks/_intro_content.scss";
+@import "blocks/_item_container.scss";
+@import "blocks/_features_contaoner.scss";
+@import "blocks/_search_content.scss";
+@import "blocks/_button.scss";
+@import "blocks/_map.scss";
+@import "blocks/_social.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_search_window.scss";
+@import "blocks/_search_parameters.scss";
+@import "blocks/_search_results.scss";
+@import "blocks/_hotels_item.scss";

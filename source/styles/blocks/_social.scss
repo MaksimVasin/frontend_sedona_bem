@@ -1,0 +1,37 @@
+.page-footer__social {
+  display: flex;
+  flex: auto;
+  justify-content: center;
+}
+
+.page-footer__icon {
+  display: block;
+  margin-left: 5px;
+  padding: 15px 0 0 15px;
+  width: 45px;
+  height: 45px;
+  background-color: $blue;
+  transition: background 0.2s linear;
+}
+
+.page-footer__socia:first-child {
+  margin-left: 0;
+}
+
+.page-footer__icon img {
+  opacity: 1;
+  filter: invert(100%);
+  transition: opacity 0.2s linear;
+}
+
+.page-footer__icon:hover {
+  background-color: $blue_hover;
+}
+
+.page-footer__icon:hover .page-footer__icon img {
+  opacity: 0.1;
+}
+
+.page-footer__icon:active {
+  background-color: $blue_active;
+}

@@ -1,0 +1,49 @@
+.intro::before {
+  content: "";
+  display: block;
+
+  @media (min-width: 0) {
+  }
+
+  @media (max-width: $mobile-width) and (max-resolution: 2dppx) {
+    height: 389px;
+    background: url("../../img/intro-title-mobile.svg") no-repeat center, url("../../img/intro-bg2-mobile.svg") no-repeat, $blue url("../../img/intro-bg-mobile.jpg") no-repeat;
+    background-position: center 50%, bottom, top;
+    background-size: 289px, 102%, cover;
+  }
+
+  @media (max-width: $mobile-width) and (min-resolution: 2dppx) {
+    height: 389px;
+    background: url("../../img/intro-title-mobile.svg") no-repeat center, url("../../img/intro-bg2-mobile.svg") no-repeat, $blue url("../../img/intro-bg-mobile@x2.jpg") no-repeat;
+    background-position: center 50%, bottom, top;
+    background-size: 289px, 102%, cover;
+  }
+
+  @media (min-width: $mobile-width) and (max-resolution: 2dppx) {
+    height: 520px;
+    background: url("../../img/intro-title-mobile.svg") no-repeat center, url("../../img/intro-bg2-tablet.svg") no-repeat, $blue url("../../img/intro-bg-tablet.jpg") no-repeat;
+    background-position: center 50%, bottom, top;
+    background-size: 460px, 102%, cover;
+  }
+
+  @media (min-width: $mobile-width) and (min-resolution: 2dppx) {
+    height: 520px;
+    background: url("../../img/intro-title-mobile.svg") no-repeat center, url("../../img/intro-bg2-tablet.svg") no-repeat, $blue url("../../img/intro-bg-tablet@x2.jpg") no-repeat;
+    background-position: center 50%, bottom, top;
+    background-size: 460px, 102%, cover;
+  }
+
+  @media (min-width: $descktop-width) and (max-resolution: 2dppx) {
+    height: 518px;
+    background: url("../../img/intro-title-mobile.svg") no-repeat center 45%, url("../../img/intro-bg2-desktop.svg") no-repeat, $blue url("../../img/intro-bg-desktop.png") no-repeat;
+    background-position: center 50%, 52% bottom, top;
+    background-size: 460px, 102%, cover;
+  }
+
+  @media (min-width: $descktop-width) and (min-resolution: 2dppx) {
+    height: 518px;
+    background: url("../../img/intro-title-mobile.svg") no-repeat center 45%, url("../../img/intro-bg2-desktop.svg") no-repeat, $blue url("../../img/intro-bg-desktop@x2.jpg") no-repeat;
+    background-position: center 50%, 52% bottom, top;
+    background-size: 460px, 102%, cover;
+  }
+}

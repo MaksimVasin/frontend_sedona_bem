@@ -1,0 +1,25 @@
+.page__body {
+  overflow-wrap: break-word;
+  margin: 0;
+  min-height: 100%;
+  word-wrap: break-word;
+  color: #000;
+  background-color: $background-body;
+}
+
+.page {
+  margin: 0 auto;
+  max-width: 1200px;
+  box-shadow: 0 0 10px 10px rgba($color: #020202, $alpha: 0.1);
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #fff;
+}
+
+.page-main,
+.page-hotels {
+  @media (max-width: $mobile-width) {
+    padding-top: 56px;
+  }
+}

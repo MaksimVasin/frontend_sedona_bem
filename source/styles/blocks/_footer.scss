@@ -1,0 +1,36 @@
+.page-footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 6%;
+  background-color: #fff;
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.page-footer__visit-sedona,
+.page-footer__phone {
+  padding-top: calc((60px - 1em) / 2);
+  width: 30%;
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.page-footer__visit-sedona {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.page-footer__social {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+  }
+}

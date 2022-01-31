@@ -1,0 +1,20 @@
+.search-hotels__parameters {
+  background: $blue url("../../img/hotel-bg.jpg") no-repeat center 25% fixed;
+  background-size: 100%;
+}
+
+.search-hotels__search-user-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  padding: 24px 6%;
+}
+
+.search-hotels__item {
+  grid-row: 1;
+}
+
+.search-hotels__item:last-child {
+  grid-column: 4;
+  width: 100%;
+  background-color: #fff;
+}

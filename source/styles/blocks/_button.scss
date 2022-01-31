@@ -1,0 +1,36 @@
+.button {
+  outline: none;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: $blue;
+  transition: background 0.2s linear;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button:hover {
+  background-color: $blue_hover;
+}
+
+.button:active {
+  background-color: $blue_active;
+}
+
+.button--brown {
+  background-color: $brown;
+}
+
+.button--brown:hover {
+  background-color: $brown_hover;
+}
+
+.button--brown:active {
+  background-color: $brown_active;
+}

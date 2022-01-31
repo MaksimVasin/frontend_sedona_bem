@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/normalize.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <!-- <link rel="preload" href="fonts/PTSansBold/PTSansBold.ttf" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
+    <title>Sedona</title>
+</head>
+<body class="page__body">
+    <div class="page">
+        <header class="page-header">
+            <nav class="main-menu main-menu--open main-menu--nojs">
+                <!-- main-nav__list - position -->
+                <button class="main-menu__toggle" id="nav_toggle" type="button"></button>
+                <ul class="main-menu__list nav-list">
+                    <li class="main-menu__item">
+                        <a href="index.html">Информация</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#">Карта штата</a>
+                    </li>
+                    <li class="main-menu__item main-menu__item--active">
+                        <a href="#">Гостиницы</a>
+                    </li>
+                </ul>
+                <div class="page-header-wrap">
+                    <a class="page-header-logo" href="">
+                        <img src="/source/img/logo-sedona-mobile.svg" alt="">
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <main class="page-hotels">
+          <section class="search-hotels">
+            <div class="search-hotels__parameters">
+              <form class="search-hotels__search-user-form">
+                <div class="search-hotels__item">
+                  <p>Инфраструктура:</p>
+                  <input type="radio" id="swimming-pool" name="swimming-pool"><label for="swimming-pool">Бассейн</label><br>
+                  <input type="radio" id="parking" name="parking"><label for="parking">Парковка</label><br>
+                  <input type="radio" id="wi-fi" name="wi-fi"><label for="wi-fi">Wi-fi</label><br>
+                </div>
+                <div class="search-hotels__item">
+                  <p>Тип жилья:</p>
+                  <input type="radio" id="hotel" name="hotel"><label for="hotel">Гостиница</label><br>
+                  <input type="radio" id="motel" name="motel"><label for="motel">Мотель</label><br>
+                  <input type="radio" id="apartments" name="apartments"><label for="apartments">Апартаменты</label><br>
+                </div>
+                <div class="search-hotels__item">
+                  <p>Стоимость в сутки:</p>
+                  <input type="range"><br>
+                  <button class="button-search" type="submit">Найти</button>
+                </div>
+              </form>
+            </div>
+            <div class="search-hotels__result">
+              <div class="result__sort-wrap">
+                <p class="result__found">Найдено: 3</p>
+                <p class="result__sort">Сортировка:</p>
+                <div class="result__item">
+                  <div class="result__sort-parameters">
+                    <button class="result__item-button">По цене</button>
+                    <button class="result__item-button">По типу</button>
+                    <button class="result__item-button">По рейтингу</button>
+                  </div>
+                </div>
+                <div class="result__item-up-down">
+                  <button class="result__item-button-up-down result__item-button-up">up</button>
+                  <button class="result__item-button-up-down result__item-button-down">down</button>
+                </div>
+              </div>
+              <div class="result__hotels">
+                <article class="hotels__item">
+                  <img class="hotels__img" src="img/hotel-photo.jpg" alt="" width="135" height="90">
+                  <div class="hotels__content">
+                    <p class="result__found">Amara Resort & Spa</p>
+                    <p class="hotels__info">Гостиница от 4000 р.</p>
+                    <div class="hotels__buttons">
+                      <button class="button">Подробнее</button>
+                      <button class="button button--brown">Забронировать</button>
+                    </div>
+                  </div>
+                  <div class="hotels__rating">
+                    <div class="hotels__stars">*****</div>
+                    <p class="hotels_rating-num">Рейтинг: 9.2</p>
+                  </div>
+                </article>
+                <article class="hotels__item">
+                  <img class="hotels__img" src="img/hotel-photo.jpg" alt="" width="135" height="90">
+                  <div class="hotels__content">
+                    <p class="result__found">Amara Resort & Spa</p>
+                    <p class="hotels__info">Гостиница от 4000 р.</p>
+                    <div class="hotels__buttons">
+                      <button class="button">Подробнее</button>
+                      <button class="button button--brown">Забронировать</button>
+                    </div>
+                  </div>
+                  <div class="hotels__rating">
+                    <div class="hotels__stars">*****</div>
+                    <p class="hotels_rating-num">Рейтинг: 9.2</p>
+                  </div>
+                </article>
+                <article class="hotels__item">
+                  <img class="hotels__img" src="img/hotel-photo.jpg" alt="" width="135" height="90">
+                  <div class="hotels__content">
+                    <p class="result__found">Amara Resort & Spa</p>
+                    <p class="hotels__info">Гостиница от 4000 р.</p>
+                    <div class="hotels__buttons">
+                      <button class="button">Подробнее</button>
+                      <button class="button button--brown">Забронировать</button>
+                    </div>
+                  </div>
+                  <div class="hotels__rating">
+                    <div class="hotels__stars">*****</div>
+                    <p class="hotels_rating-num">Рейтинг: 9.2</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </main>
+        <footer class="page-footer">
+            <div class="page-footer__wrap">
+                <a class="page-footer__visit-sedona">#Visitsedona</a>
+                <ul class="page-footer__social">
+                    <li><a class="page-footer__icon" href="#"><img src="https://img.icons8.com/material-outlined/35/000000/instagram-new--v1.png" alt="icon" width="30"></a>
+                    </li>
+                    <li><a class="page-footer__icon" href="#"><img src="https://img.icons8.com/material-rounded/35/000000/twitter-squared.png" alt="icon" width="30"></a>
+                    </li>
+                    <li><a class="page-footer__icon" href="#"><img src="https://img.icons8.com/ios-filled/30/000000/facebook-f.png" alt="icon" width="25"></a>
+                    </li>
+                </ul>
+                <div class="page-footer__phone">+79000000000</div>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="js/burger.js"></script>
+    </div>
+</body>
+</html>
